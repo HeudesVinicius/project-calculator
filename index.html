@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <title>Calculator</title>
+        
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <script type="text/javascript" src="/js/index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="display" id="display">Display</div>
+            <button class="button2 grey ac" onclick=calculator.ac()>AC</button>
+            <button class="grey" onclick=calculator.del()>Del</button>
+            <button class="orange" onclick=calculator.division()>/</button>
+            <button onclick=calculator.nextNumber(1)>1</button>
+            <button onclick=calculator.nextNumber(2)>2</button>
+            <button onclick=calculator.nextNumber(3)>3</button>
+            <button class="orange" onclick=calculator.mutiplication()>*</button>
+            <button onclick=calculator.nextNumber(4)>4</button>
+            <button onclick=calculator.nextNumber(5)>5</button>
+            <button onclick=calculator.nextNumber(6)>6</button>
+            <button class="orange" onclick=calculator.addition()>+</button>
+            <button onclick=calculator.nextNumber(7)>7</button>
+            <button onclick=calculator.nextNumber(8)>8</button>
+            <button onclick=calculator.nextNumber(9)>9</button>
+            <button class="orange" onclick=calculator.subtraction()>-</button>
+            <button onclick=calculator.nextNumber('.')>,</button>
+            <button class="zero" onclick=calculator.nextNumber(0)>0</button>
+            <button class="button2 orange" onclick=calculator.equal()>=</button>
+        </div>
+
+        <script type="text/javascript">calculator.starting();</script>
+    </body>
+</html>
